@@ -1,5 +1,5 @@
 import story from "../assets/image/OurStory.jpg";
-import bgimg from "../assets/image/gallery1.jpg";
+import bgimg from "../assets/image/Gallery1.jpg";
 
 const OurStory = () => {
   return (
