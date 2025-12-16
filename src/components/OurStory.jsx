@@ -46,16 +46,12 @@ const OurStory = () => {
 
           {/* Text 1 */}
           <p className="text-sm sm:text-base leading-relaxed sm:leading-loose text-bold font-basker animate-story-right">
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Ananya, a textile artist in Jaipur, saw the world in threads and dyes. Her small shop was a riot of color, filled with hand-woven tapestries that seemed to capture the very soul of the Rajasthani desert—vivid sunsets, deep indigo nights, and the subtle gold dust of the ancient city. Her hands, perpetually stained with turmeric and madder root, wove not just patterns, but memories. She lived a life of quiet creation, focused on perfecting the intricate ikkat and bandhani techniques passed down from her grandmother, convinced that her destiny was confined to the warp and weft of her loom. It was here, amidst the spools of silk and cotton, that she first encountered Rohan, a young, ambitious architect from Mumbai who had come to the city to study the structural elegance of its historical havelis.
           </p>
 
           {/* Text 2 */}
           <p className="text-sm sm:text-base leading-relaxed sm:leading-loose text-bold font-basker animate-story-right delay-150">
-            At Wix we’re passionate about making templates that allow you to
-            build fabulous websites and it’s all thanks to the support and
-            feedback from users like you!
+            Rohan’s world was one of blueprint and precision, of stone and steel, but he was instantly captivated by the fluid, organic chaos of Ananya’s workspace. He commissioned a tapestry for his new design studio, but what he truly sought was to unravel the mystery of the woman behind the loom. She found his detailed sketches of arches and domes to be cold and rigid, while he saw her work as beautiful but ultimately fragile. Their early conversations were delightful clashes—he argued for the permanence of granite; she championed the expressive soul of muslin. Yet, as they spent time together, a remarkable synergy emerged. Ananya began to see the soaring ambition in Rohan’s lines, the way his designs could frame light and air, and Rohan realized that Ananya's complex, interlocked patterns were the very essence of structural integrity. They fell in love not by changing their passions, but by learning to weave their disparate crafts together, proving that the softest thread could beautifully anchor the strongest pillar.
           </p>
         </div>
       </div>

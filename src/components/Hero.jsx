@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="bg-left flex flex-col items-center justify-start px-6 sm:px-12 lg:px-20 text-center pt-16 lg:pt-20 relative z-10">
         <div className="flex flex-col items-center animate-hero-left">
           <h1 className="serif text-4xl sm:text-6xl lg:text-7xl xl:text-8xl tracking-wide text-gold leading-tight font-awesome mt-4 drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)]">
-            Hayden & <br /> Melissa
+            Ananya & <br /> Rohan
           </h1>
 
           <div className="relative w-[260px] sm:w-[320px] lg:w-[360px] h-[360px] sm:h-[440px] lg:h-[480px] mt-8 group">

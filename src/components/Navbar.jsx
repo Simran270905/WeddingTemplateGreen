@@ -21,7 +21,7 @@ const Navbar = () => {
           className="font-bidena text-lg sm:text-xl lg:text-2xl text-[#d5c39b] cursor-pointer tracking-[.1em] relative group bg-white/10 backdrop-blur-sm px-4 py-2 rounded-2xl border border-[#d5c39b]/30 shadow-xl shadow-[#d5c39b]/10 hover:shadow-2xl hover:shadow-[#d5c39b]/30 transition-all duration-500 ease-out-hover hover:scale-105 hover:-rotate-1 active:scale-95 font-bold"
           onClick={() => scrollTo("home")}
         >
-          <span className="relative z-10">Hayden & Melissa</span>
+          <span className="relative z-10">Ananya & Rohan</span>
           <div className="absolute inset-0 bg-gradient-to-r from-[#d5c39b]/20 to-[#f7f3e8]/20 rounded-2xl scale-0 group-hover:scale-100 transition-transform duration-500 origin-center blur-sm"></div>
         </h1>
 

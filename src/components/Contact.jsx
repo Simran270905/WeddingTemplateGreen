@@ -72,7 +72,7 @@ const Contact = () => {
         {/* RIGHT — CONTACT INFO */}
         <div className="text-soft text-sm leading-loose animate-contact-right">
           <p className="serif text-xl sm:text-2xl text-gold mb-4 sm:mb-6 font-basker">
-            #Haylissa
+            #RoAn
           </p>
 
           <p className="mb-4 font-basker">info@mysite.com</p>
@@ -81,7 +81,7 @@ const Contact = () => {
 
       {/* FOOTER */}
       <p className="text-center text-[11px] sm:text-xs text-soft mt-20 lg:mt-32 font-basker">
-        ©2035 by Hayden & Melissa.
+        ©2035 by Ananya & Rohan.
       </p>
     </section>
   );

@@ -13,8 +13,7 @@ const Details = () => {
         {/* RIGHT */}
         <div className="bg-left flex items-center justify-center px-8 sm:px-16 lg:px-24 py-10 lg:py-0 animate-details-right">
           <p className="serif text-2xl sm:text-3xl lg:text-4xl text-gold text-center leading-tight font-chocolate">
-            I'm a paragraph. Click here to add your own text and edit me. Let
-            your users get to know a little more about you.
+            Your presence means the world to us as we begin our life together. Find all the details and RSVP instructions inside this invitation. We can’t wait to celebrate with you!
           </p>
         </div>
       </div>
@@ -30,11 +29,21 @@ const Details = () => {
             <span className="w-10 sm:w-16 h-[2px] bg-left" />
           </div>
 
-          <p className="text-sm sm:text-base leading-loose text-soft font-semibold max-w-md">
-            I'm a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
-          </p>
+          <p className="mb-4">
+          We are so grateful that you are traveling to celebrate with us!
+        </p>
+        <p className="mb-4">
+          Nearest Airport:The closest major airport is [Airport Name], approximately [30 minutes] from the venue.
+        </p>
+        <p className="mb-4">
+          Driving Directions: The venue is easily accessible via [Name of Major Highway/Road]. Please use the address: [Full Venue Address] in your GPS.
+        </p>
+        <p className="mb-4">
+          Parking: Valet parking will be provided complimentary at the venue entrance starting at [Time].
+        </p>
+        <p>
+          Hotel Block: We have reserved a block of rooms at [Hotel Name]. Please reference the [Group Name or Code, e.g., 'Singh-Patel Wedding'] when booking to receive the discounted rate. [Link to Booking/Phone Number]
+        </p>
         </div>
 
         {/* MAP CARD */}
