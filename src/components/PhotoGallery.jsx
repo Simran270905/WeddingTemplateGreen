@@ -60,7 +60,7 @@ const PhotoGallery = () => {
 
         {/* Scroll Hint */}
         <p className="mt-10 text-center text-[11px] sm:text-xs tracking-[0.28em] text-gold italic uppercase animate-gallery-hint">
-          ← Scroll horizontally →
+          ←  →
         </p>
       </div>
     </section>

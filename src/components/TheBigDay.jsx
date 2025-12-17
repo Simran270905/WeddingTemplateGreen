@@ -63,9 +63,9 @@ const TheBigDay = () => {
             </div>
 
             <p className="text-sm sm:text-base leading-loose text-soft">
-              The Palace Amphitheater <br />
-              500 Terry Francine Street <br />
-              Udaipur
+              Umaid Bhawan Palace <br />
+               Circuit House Rd, near Umaid Bhawan Museum, Cantt Area, Jodhpur, Rajasthan 342006<br />
+                Jodhpur, Rajasthan 342006
             </p>
           </div>
 

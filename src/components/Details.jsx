@@ -29,21 +29,10 @@ const Details = () => {
             <span className="w-10 sm:w-16 h-[2px] bg-left" />
           </div>
 
-          <p className="mb-4">
+          <p className="mb-4 font-basker">
           We are so grateful that you are traveling to celebrate with us!
         </p>
-        <p className="mb-4">
-          Nearest Airport:The closest major airport is [Airport Name], approximately [30 minutes] from the venue.
-        </p>
-        <p className="mb-4">
-          Driving Directions: The venue is easily accessible via [Name of Major Highway/Road]. Please use the address: [Full Venue Address] in your GPS.
-        </p>
-        <p className="mb-4">
-          Parking: Valet parking will be provided complimentary at the venue entrance starting at [Time].
-        </p>
-        <p>
-          Hotel Block: We have reserved a block of rooms at [Hotel Name]. Please reference the [Group Name or Code, e.g., 'Singh-Patel Wedding'] when booking to receive the discounted rate. [Link to Booking/Phone Number]
-        </p>
+        
         </div>
 
         {/* MAP CARD */}
@@ -51,7 +40,7 @@ const Details = () => {
           <div className="overflow-hidden rounded-2xl mb-6 group">
             <iframe
               title="Wedding Location"
-              src="https://www.google.com/maps?q=San+Francisco&output=embed"
+              src="https://www.google.com/maps?q=Umaid+Bhawan+Palace&output=embed"
               className="w-full h-[220px] sm:h-[240px] lg:h-[260px] border-0 transform group-hover:scale-[1.02] transition-transform duration-700 ease-out"
               loading="lazy"
             ></iframe>

@@ -21,53 +21,7 @@ const Contact = () => {
           </button>
         </div>
 
-        {/* CENTER — FORM */}
-        <form className="space-y-6 animate-contact-up">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <label className="block mb-1 text-[11px] text-soft tracking-wide">
-                First name *
-              </label>
-              <input
-                className="w-full bg-white/95 px-4 py-3 outline-none text-sm font-basker border border-transparent focus:border-gold transition-colors"
-              />
-            </div>
-            <div>
-              <label className="block mb-1 text-[11px] text-soft tracking-wide">
-                Last name *
-              </label>
-              <input
-                className="w-full bg-white/95 px-4 py-3 outline-none text-sm font-basker border border-transparent focus:border-gold transition-colors"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="block mb-1 text-[11px] text-soft tracking-wide">
-              Email *
-            </label>
-            <input
-              className="w-full bg-white/95 px-4 py-3 outline-none text-sm font-basker border border-transparent focus:border-gold transition-colors"
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-[11px] text-soft tracking-wide">
-              Message
-            </label>
-            <textarea
-              rows="5"
-              className="w-full bg-white/95 px-4 py-3 outline-none resize-none text-sm font-basker border border-transparent focus:border-gold transition-colors"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-left text-gold serif tracking-[0.25em] py-3 hover:opacity-90 hover:translate-y-0.5 transition-all duration-300 font-basker font-bold text-xs sm:text-sm uppercase"
-          >
-            Submit
-          </button>
-        </form>
+       
 
         {/* RIGHT — CONTACT INFO */}
         <div className="text-soft text-sm leading-loose animate-contact-right">
@@ -75,13 +29,13 @@ const Contact = () => {
             #RoAn
           </p>
 
-          <p className="mb-4 font-basker">info@mysite.com</p>
+          <p className="mb-4 font-basker">starxinnovation@gmail.com </p>
         </div>
       </div>
 
       {/* FOOTER */}
       <p className="text-center text-[11px] sm:text-xs text-soft mt-20 lg:mt-32 font-basker">
-        ©2035 by Ananya & Rohan.
+        © by StarX Innovations and IT Solution
       </p>
     </section>
   );

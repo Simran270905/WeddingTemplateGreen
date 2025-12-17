@@ -54,7 +54,7 @@ const Hero = () => {
       <div className="bg-right flex flex-col items-center justify-start px-6 sm:px-12 lg:px-20 text-center pt-16 lg:pt-20 relative z-10">
         <div className="flex flex-col items-center animate-hero-right">
           <h2 className="serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl tracking-wide text-gold leading-tight mt-4 font-awesome drop-shadow-[0_4px_14px_rgba(0,0,0,0.35)]">
-            April 30 <br /> Udaipur
+            April 30 <br /> Jodhpur
           </h2>
 
           <div className="relative w-[260px] sm:w-[320px] lg:w-[360px] h-[360px] sm:h-[440px] lg:h-[480px] mt-8 group">
@@ -74,9 +74,9 @@ const Hero = () => {
               Apr 30, 2035 · 5:00 PM – 11:00 PM
             </p>
             <p className="mt-0">
-              The Palace Amphitheater <br />
-              500 Terry A Francois Blvd <br />
-              Udaipur
+             Umaid Bhawan Palace<br />
+               Circuit House Rd, near Umaid Bhawan Museum, Cantt Area,  <br />
+                Jodhpur, Rajasthan 342006
             </p>
           </div>
         </div>
