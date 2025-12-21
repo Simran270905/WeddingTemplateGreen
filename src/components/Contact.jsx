@@ -16,9 +16,7 @@ const Contact = () => {
             send us your best wishes!
           </p>
 
-          <button className="bg-left text-gold serif tracking-[0.25em] px-8 sm:px-10 py-3 hover:opacity-90 hover:translate-y-0.5 transition-all duration-300 font-basker text-xs sm:text-sm uppercase">
-            RSVP
-          </button>
+         
         </div>
 
        

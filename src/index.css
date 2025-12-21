@@ -317,9 +317,20 @@ html {
   animation: section-fade 0.7s ease-out both;
 }
 
+
 /* delay utilities */
 .delay-150 { animation-delay: 0.15s !important; }
 .delay-300 { animation-delay: 0.3s !important; }
 .delay-450 { animation-delay: 0.45s !important; }
 .delay-600 { animation-delay: 0.6s !important; }
 .delay-750 { animation-delay: 0.75s !important; }
+
+
+/* hide scrollbar but keep scroll */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE */
+  scrollbar-width: none;     /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}
