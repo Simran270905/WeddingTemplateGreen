@@ -1,16 +1,31 @@
 import story from "../assets/image/OurStory.jpg";
 import bgimg from "../assets/image/Gallery1.jpg";
 
+const ourStoryConfig = {
+  id: "wedding-our-story-1",
+  title: "Our Story",
+  image: {
+    src: story,
+    alt: "Our Story",
+  },
+  imageCaption: "— Loving the journey —",
+  storyText1: `Ananya, a textile artist in Jaipur, saw the world in threads and dyes. Her small shop was a riot of color, filled with hand-woven tapestries that seemed to capture the very soul of the Rajasthani desert—vivid sunsets, deep indigo nights, and the subtle gold havelis.`,
+  storyText2: `Rohan's world was one of blueprint and precision, of stone and steel, but he was instantly captivated by the fluid, organic chaos of Ananya's workspace. He commissioned a tapestry for his new design studio, but what he truly sought was to unravel the mystery.`,
+  background: {
+    src: bgimg,
+  },
+};
+
 const OurStory = () => {
   return (
     <section className="relative w-full py-32 lg:py-40 overflow-hidden">
-      {/* Background Image – LIGHT as you gave */}
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-center bg-cover"
-        style={{ backgroundImage: `url(${bgimg})` }}
+        style={{ backgroundImage: `url(${ourStoryConfig.background.src})` }}
       />
 
-      {/* Same soft light gradient overlay you used */}
+      {/* Soft light gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#f4fbf8]/95 via-[#f4fbf8]/90 to-[#f4fbf8]/95" />
 
       {/* Content */}
@@ -18,7 +33,7 @@ const OurStory = () => {
         {/* Heading */}
         <div className="flex items-center gap-4 sm:gap-6 mb-16 sm:mb-20 animate-story-heading">
           <h2 className="serif text-3xl sm:text-4xl text-gold tracking-wide font-chocolate font-bold">
-            Our Story
+            {ourStoryConfig.title}
           </h2>
           <span className="w-10 sm:w-14 h-[2px] bg-gold" />
         </div>
@@ -30,8 +45,8 @@ const OurStory = () => {
             <div className="bg-white/70 p-4 sm:p-6 shadow-xl rounded-3xl backdrop-blur-sm border border-white/60 group transition-transform duration-700 ease-out hover:-translate-y-2">
               <div className="relative overflow-hidden rounded-2xl">
                 <img
-                  src={story}
-                  alt="Our Story"
+                  src={ourStoryConfig.image.src}
+                  alt={ourStoryConfig.image.alt}
                   className="w-[240px] sm:w-[260px] lg:w-[260px] h-[320px] sm:h-[340px] object-cover transform group-hover:scale-[1.04] group-hover:-translate-y-1 transition-transform duration-[1100ms] ease-out"
                 />
                 {/* soft light sweep */}
@@ -40,18 +55,19 @@ const OurStory = () => {
             </div>
 
             <p className="mt-5 text-[10px] sm:text-xs tracking-[0.28em] text-gold italic uppercase animate-fade-up text-center">
-              — Loving the journey —
+              {ourStoryConfig.imageCaption}
             </p>
           </div>
 
           {/* Text 1 */}
           <p className="text-sm sm:text-base leading-relaxed sm:leading-loose text-bold font-basker animate-story-right">
-            Ananya, a textile artist in Jaipur, saw the world in threads and dyes. Her small shop was a riot of color, filled with hand-woven tapestries that seemed to capture the very soul of the Rajasthani desert—vivid sunsets, deep indigo nights, and the subtle gold havelis.
+            {ourStoryConfig.storyText1}
           </p>
 
           {/* Text 2 */}
           <p className="text-sm sm:text-base leading-relaxed sm:leading-loose text-bold font-basker animate-story-right delay-150">
-            Rohan’s world was one of blueprint and precision, of stone and steel, but he was instantly captivated by the fluid, organic chaos of Ananya’s workspace. He commissioned a tapestry for his new design studio, but what he truly sought was to unravel the mystry.</p>
+            {ourStoryConfig.storyText2}
+          </p>
         </div>
       </div>
     </section>

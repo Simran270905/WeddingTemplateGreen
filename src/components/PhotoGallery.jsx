@@ -20,6 +20,22 @@ import Gallery16 from "../assets/image/Gallery1.jpg";
 
 import bgimg1 from "../assets/image/bgimg1.jpg";
 
+const galleryConfig = {
+  id: "wedding-gallery-1",
+  background: bgimg1,
+  caption: "auto-playing memories",
+  viewMoreButton: {
+    showMore: "View More",
+    showLess: "View Less",
+  },
+  images: [
+    Gallery1, Gallery2, Gallery3, Gallery4,
+    Gallery5, Gallery6, Gallery7, Gallery8,
+    Gallery9, Gallery10, Gallery11, Gallery12,
+    Gallery13, Gallery14, Gallery15, Gallery16
+  ],
+};
+
 const CinematicPhotoGallery = () => {
   const topX = useMotionValue(0);
   const bottomX = useMotionValue(0);
@@ -38,28 +54,20 @@ const CinematicPhotoGallery = () => {
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  const topImages = [
-    Gallery1, Gallery2, Gallery3, Gallery4,
-    Gallery5, Gallery6, Gallery7, Gallery8
-  ];
-
-  const bottomImages = [
-    Gallery9, Gallery10, Gallery11, Gallery12,
-    Gallery13, Gallery14, Gallery15, Gallery16
-  ];
-
-  const allImages = [...topImages, ...bottomImages];
+  const topImages = galleryConfig.images.slice(0, 8);
+  const bottomImages = galleryConfig.images.slice(8, 16);
+  const allImages = galleryConfig.images;
 
   const loopTop = [...topImages, ...topImages, ...topImages];
   const loopBottom = [...bottomImages, ...bottomImages, ...bottomImages];
 
   return (
     <>
-      {/* ✅ SCROLL SECTION — UNTOUCHED */}
+      {/* SCROLL SECTION */}
       <section
         className="relative py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 overflow-hidden text-white bg-neutral-950 w-full"
         style={{
-          backgroundImage: `url(${bgimg1})`,
+          backgroundImage: `url(${galleryConfig.background})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -72,7 +80,12 @@ const CinematicPhotoGallery = () => {
         <div className="relative z-10 h-[200px] overflow-hidden mb-16">
           <motion.div style={{ x: topX }} className="absolute inset-0 flex gap-6">
             {loopTop.map((img, i) => (
-              <img key={i} src={img} className="w-[300px] h-[200px] object-cover rounded-2xl" />
+              <img 
+                key={i} 
+                src={img} 
+                className="w-[300px] h-[200px] object-cover rounded-2xl" 
+                alt={`Gallery image ${i + 1}`}
+              />
             ))}
           </motion.div>
         </div>
@@ -81,13 +94,18 @@ const CinematicPhotoGallery = () => {
         <div className="relative z-10 h-[200px] overflow-hidden">
           <motion.div style={{ x: bottomX }} className="absolute inset-0 flex gap-6 flex-row-reverse">
             {loopBottom.map((img, i) => (
-              <img key={i} src={img} className="w-[300px] h-[200px] object-cover rounded-2xl" />
+              <img 
+                key={i} 
+                src={img} 
+                className="w-[300px] h-[200px] object-cover rounded-2xl" 
+                alt={`Gallery image ${i + 1}`}
+              />
             ))}
           </motion.div>
         </div>
 
         <p className="relative z-10 mt-20 text-center text-xs tracking-widest text-white/50">
-          auto-playing memories
+          {galleryConfig.caption}
         </p>
 
         {/* VIEW MORE BUTTON */}
@@ -96,12 +114,12 @@ const CinematicPhotoGallery = () => {
             onClick={() => setViewMore(!viewMore)}
             className="px-6 py-2 text-xs tracking-widest uppercase border border-white/40 text-white/70 hover:bg-white/10 transition"
           >
-            {viewMore ? "View Less" : "View More"}
+            {viewMore ? galleryConfig.viewMoreButton.showLess : galleryConfig.viewMoreButton.showMore}
           </button>
         </div>
       </section>
 
-      {/* ✅ GRID — COMPLETELY SEPARATE (SCROLL UNAFFECTED) */}
+      {/* GRID GALLERY */}
       {viewMore && (
         <section className="bg-black py-20 px-4 sm:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -110,6 +128,7 @@ const CinematicPhotoGallery = () => {
                 key={i}
                 src={img}
                 className="w-full h-full object-cover rounded-xl shadow-xl hover:scale-105 transition"
+                alt={`Gallery image ${i + 1}`}
                 loading="lazy"
               />
             ))}

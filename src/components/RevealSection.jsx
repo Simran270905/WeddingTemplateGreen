@@ -1,6 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 
-const RevealSection = ({ className = "", animationClass, children, id }) => {
+const revealSectionConfig = {
+  defaultThreshold: 0.25, // 25% of section in viewport
+};
+
+const RevealSection = ({ 
+  className = "", 
+  animationClass, 
+  children, 
+  id,
+  threshold = revealSectionConfig.defaultThreshold 
+}) => {
   const ref = useRef(null);
   const [hasShown, setHasShown] = useState(false);
 
@@ -12,15 +22,15 @@ const RevealSection = ({ className = "", animationClass, children, id }) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setHasShown(true);       // lock to true once visible
-          observer.disconnect();   // stop observing so it never re-triggers
+          observer.disconnect();    // stop observing so it never re-triggers
         }
       },
-      { threshold: 0.25 } // 25% of section in viewport
+      { threshold } // Configurable threshold
     );
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [threshold]);
 
   return (
     <section
